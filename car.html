@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+			<title> Car info Fetch </title>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+		<style>
+		
+				body {
+						background-image:url("https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-1.jpg");
+						background-repeat: no-repeat;
+						background-size: 1300 px 590px;
+						background-attachment:fixed;
+						
+				}
+		</style>
+	</head>
+
+	
+	<body>
+  
+			<div class="row">
+		
+				<!-- text box -->
+					<div class="col-sm-12" style="border:1px black solid; height:100px;">
+						
+						<marquee behavior="scroll" scrollamount="10" onmouseover="stop()" onmouseleave="start()"> 
+								<h1 style="color:white; font-family:cursive;"> Vahan Info </h1>
+						</marquee>
+					
+					</div>
+			
+				
+			</div>
+
+		
+		<!--   model div  -->
+			<center> <div class="container" style="margin-top:20px">
+				<h2 style="color:white">Give Us Number</h2>
+  
+		<!-- Button to Open the Modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Click to get info
+			</button>
+
+  
+		<!-- The Modal -->
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+      
+			<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title"> Hello Everyone !! </h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				
+				<!-- Modal body -->
+						<div class="modal-body">
+						
+								<form action="/action_page.php">
+									<div class="form-group">
+										<label for="email"> Vehicle Registration Information </label>
+											<input type="text" class="form-control" id="email" placeholder="Enter your commands" name="commands">
+									</div>
+
+    
+									<button type="submit" value="Display" class="btn btn-primary">Submit</button>
+								</form>
+						
+						<!--	<div class="file btn btn-md btn-primary" style="position:relative; overflow:hidden;">
+									Upload Image
+									<input type="file" name="file" style="position:absolute; font-size:50px; opacity:0; right:0; top:0;" />
+							</div> -->
+						
+						</div>
+						
+					<!-- Modal footer
+						<div class="modal-footer">
+							<button type="submit" value="Display" class="btn btn-primary" data-dismiss="modal" style="margin-right:300px"> Submit </button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>-->
+        
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+	<!-- here modal closed -->	
+		
+		
+			
+			
+		
+		<!-- necesarry for background image--> 
+		<div class="row">
+				<img src="https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-1.jpg" alt="car image" width="1375px" height="40%">
+		
+		</div>
+		
+			
+		
+</body>
+
+
+</html>
